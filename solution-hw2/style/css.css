@@ -23,7 +23,6 @@ body {
 
 hr {
     border: 2px solid black;
-    margin-bottom: 30px;
 }
 
 .bunbun-itemview {
@@ -51,7 +50,7 @@ nav span {
 }
 
 .bunbun-titlerow {
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 55px;
 
 }
@@ -160,11 +159,10 @@ nav span {
     display: flex;
     flex-direction: column;
     width: max-content;
-    margin-left: 350px;
+    margin-left: 420px;
 }
 
 .bunbun-cartlist {
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -189,21 +187,22 @@ nav span {
 }
 
 .bunbun-cartitem {
-    font-size: 25px;
-    line-height: 0%;
-    margin: 30px 50px 20px 10px;
-    width: 400px;
+    font-size: 23px;
+    line-height: 50%;
+    margin: 30px 10px 20px 20px;
+    width: 350px;
 }
 
 #bunbun-cartitemtotal {
-    font-size: 25px;
-    width: 400px;
-    margin: 0px 50px 0px 250px;
+    font-size: 23px;
+    width: 330px;
+    margin: 0px 30px 0px 250px;
 }
 
 .bunbun-cartitemprice {
-    font-size: 25px;
+    font-size: 23px;
     text-align: right;
+    margin-left: 10px;
 }
 
 .bunbun-checkout {
@@ -228,11 +227,6 @@ nav span {
 
 REFERENCES USED
 
-on text decoration: https://www.w3schools.com/cssref/pr_text_text-decoration-thickness.php
-understanding flexboxL https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-on hover pseudoclass: https://developer.mozilla.org/en-US/docs/Web/CSS/:hover
-on hover pseudoclass (2): https://www.w3schools.com/cssref/sel_hover.php
-on hover including areas outside img box: https://stackoverflow.com/questions/48753252/enable-hover-on-margin
-on buttons: https://www.w3schools.com/css/css3_buttons.asp#gsc.tab=0
+understanding flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 */
