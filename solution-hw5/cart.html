@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style/css.css" type="text/css">
+</head>
+
+<body>
+    <div class="top">
+
+        <div class="header">
+            <a href="./index.html">
+                <img class="header" src="../assets/logo/logo-01.svg" alt="bun bun cake shop logo"></a>
+        </div>
+        <div class="topcolumn">
+            <nav>
+                <a href="./index.html">PRODUCTS</a>
+                <a href="./cart.html"><span>CART</span></a>
+            </nav>
+            <hr>
+
+            <div class="titlerow">
+                <p>Our hand-made cinnamon rolls</p>
+            </div>
+        </div>
+    </div>
+    <div class="cartview">
+        <div class="cartlist">
+            <template id="cart-template">
+                <div class="cartlistitem">
+                    <div class="cartlistrow1">
+                        <img class="cartimg" src="../assets/products/original-cinnamon-roll.jpg"
+                            alt="original cinnamon roll">
+                        <div class="cartitem">
+                            <p><span id="rollname">Original</span> Cinnamon Roll</p>
+                            <p>Glazing: <span id="rollglaze">Keep original</span></p>
+                            <p>Pack Size: <span id="rollsize">Pack Size: 1</span></p>
+                        </div>
+                        <div class="cartitemprice">
+                            <p id="cartrollprice">$ 2.49</p>
+                        </div>
+                    </div>
+                    <div class="cartlistrow1">
+                        <div class="cartrmv">
+                            <p id="btnrmv">Remove</p>
+                        </div>
+            </template>
+        </div>
+
+        <div class="cartlistitem">
+            <hr>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="cartlistrow1">
+        <div id="cartitemtotal">
+            <p>Total</p>
+        </div>
+        <div class="cartitemprice">
+            <p>$ <span id="carttotal">29.94</span></p>
+        </div>
+    </div>
+    <div class="cartlistitem">
+        <div class="checkout"><button type="button">Checkout</button></div>
+    </div>
+    </div>
+    </div>
+
+    <script src="./cart.js"></script>
+
+
+
+</body>
+
+</html>
