@@ -99,6 +99,21 @@ function sizeChange(sizeElement) {
     finalPrice.textContent = "$ " + glazeAndSize.toFixed(2);
 }
 
+// Setting the local storage to be retrieved when page is loaded
+function loadLocalStorage() {
+    const storedCart = localStorage.getItem('storedCart');
+
+    if (storedCart) {
+        cart = JSON.parse(storedCart);
+    }
+    else {
+        cart = [];
+    }
+    console.log(cart);
+
+}
+
+
 // Adding event listener for Add to Cart button
 const cartBtn = document.querySelector('.itemprice > button');
 
@@ -133,17 +148,6 @@ cartBtn.addEventListener('click', () => {
 }
 );
 
-// Setting the local storage to be retrieved when page is loaded
-function loadLocalStorage() {
-    const storedCart = localStorage.getItem('storedCart');
-    cart = JSON.parse(storedCart);
-    console.log(cart);
-}
-
-window.onload = function () {
-    loadLocalStorage();
-};
-
 
 // Add to Cart function + save to local storage implemented
 function addToCart(rollType, rollGlazing, packSize, rollPrice) {
@@ -159,7 +163,9 @@ function saveToLocalStorage() {
     console.log(localStorage);
 }
 
-
+window.onload = function () {
+    loadLocalStorage();
+};
 
 
 
