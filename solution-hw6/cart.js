@@ -31,13 +31,17 @@ let cartNow = [];
 // Setting the local storage to be retrieved when page is loaded, populate the local storage into cartNow array
 function loadLocalStorage() {
     const storedCart = localStorage.getItem('storedCart');
-    const cartArray = JSON.parse(storedCart);
-    console.log(cartArray);
+    if (storedCart) {
+        const cartArray = JSON.parse(storedCart);
+        console.log(cartArray);
 
-    for (const cartData of cartArray) {
-        const roll = new Roll(cartData.type, cartData.glazing, cartData.size, parseFloat(cartData.basePrice));
-        cartNow.push(roll);
-        displayCartItems(roll);
+        for (const cartData of cartArray) {
+            const roll = new Roll(cartData.type, cartData.glazing, cartData.size, parseFloat(cartData.basePrice));
+            cartNow.push(roll);
+            displayCartItems(roll);
+        }
+    } else {
+        console.log("No cart found");
     }
 }
 

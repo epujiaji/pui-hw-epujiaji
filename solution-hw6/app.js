@@ -133,6 +133,17 @@ cartBtn.addEventListener('click', () => {
 }
 );
 
+// Setting the local storage to be retrieved when page is loaded
+function loadLocalStorage() {
+    const storedCart = localStorage.getItem('storedCart');
+    cart = JSON.parse(storedCart);
+    console.log(cart);
+}
+
+window.onload = function () {
+    loadLocalStorage();
+};
+
 
 // Add to Cart function + save to local storage implemented
 function addToCart(rollType, rollGlazing, packSize, rollPrice) {
@@ -149,16 +160,6 @@ function saveToLocalStorage() {
 }
 
 
-// Setting the local storage to be retrieved when page is loaded
-function loadLocalStorage() {
-    const storedCart = localStorage.getItem('storedCart');
-    cart = JSON.parse(storedCart);
-    console.log(cart);
-}
-
-window.onload = function () {
-    loadLocalStorage();
-};
 
 
 
