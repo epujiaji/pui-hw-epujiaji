@@ -145,7 +145,19 @@ Discuss the user feedback you got during the evaluation / usability test (\~300 
 
 ## Updated Designs
 
+<<<<<<< HEAD
+![Interaction hint - changing color on letter](images/new1.png)
+![Interaction hint - changing color on envelope](images/new2.png)
+
+In this updated prototype, there are two changes I implemented based on user feedback. The first is adding visual hints that the second letter can be interacted with. I did this by making the letter change color upon hovering, into blue, so the players are prompted to click the peeking page. This aims to reduce confusion and uncertainty. Second, I changed the interaction points where users can click. Instead of clicking on the words, I made the letters on the table clickable, enlarged upon hovering, and change colors. I also included a trashcan image in the first branch screen to visualize the choices better. This way, it enhances the novelty and fun aspects of the game. Lastly, on the start page, I also implemented a similar color changing transition upon hover to show the word can be interacted with. These interaction hints will be principles that I bring as a learning from testings into my project.
+
+The full completed prototype can be accessed here: https://www.figma.com/proto/jPtObzbTRz4VJGTUIODZdS/FP2?node-id=173-877&t=jdJb7SuKhza0US2v-1 
+
+[Video Demo](images/letters.mp4)
+
+=======
 Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
+>>>>>>> parent of 452c99a (fp2)
 
 ## Feedback Summary
 
