@@ -125,27 +125,33 @@ Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-gener
 
 ## Project Description
 
-Briefly restate your motivation and a short description of your project.
+**Letters for the Road** is a choice-based text story game – an interactive experience where players navigate through the site as an adventurer who goes through a journey and will witness different narrative outcomes based on choices they pick. I aim to enrich the simple mechanics of text choice games by utilizing animations and interactivity to strengthen players’ immersion towards the story.
 
 ## High-Fi Prototypes
 
-### *Prototype 1*
+### *Prototype 1: Toss Loop*
 
-![title for prototype1](images/prototype1.png)
+![If the players choose to Toss](images/proto1a.png)
+![Toss results](images/proto1b.png)
 
-A brief description and summary of the user feedback (\<100 words, 2 images) 
+This flow shows the main option given to users when they first land inside the game if they choose not to pick up the letter and toss it away. It will lead to the same scene replaying with altered visual elements that imply users have no choice but to pick up the letter. Hence, it has bigger text, enlarged and reddened images of a letter, and slightly altered narration. From the testing session, this flow is straightforward and easily understandable by users. They succesfully perceived that they had no choice but to pick up the letter, and there was a buildup of urgency communicated by the image.
 
-### *Prototype 2*
+### *Prototype 2: Pickup Loop*
 
-…
+![If the players choose to Pick Up letter](images/proto2a.png)
+![Upon clicking the second letter](images/proto2b.png)
+
+This flow presents a branch of the main story, triggered when users decide to pick up the letters from the table. It further introduces and explains additional elements to the story that will accompany the players further down the line. In this section, I implemented simple click interactions, showing that users can click on the peeking page on the right side of the screen to reveal the second letter. However, one piece of feedback pointed out that it’s not immediately clear that this element can be interacted with, although the revealing mechanism adds a subtle touch that enhances the experience. Hence, I got a suggestion to include more visual elements that hint at this more clearly.
 
 ## Usability Test
 
-Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. 
+The usability testing surfaced both positive aspects of the prototypes as well as things that can be improved in the next iterations. Firstly, my participants feel that the mechanism of the site is very clear and straightforward; users simply need to choose one of two options, which makes for less cognitive load and creates more fun when playing this game. They do not have to think too hard to have a fully enjoyable experience. Next, they also feel the visual structure is not complicated, making use of strong design principles such as text hierarchy and grouping of objects to allow for easy comprehension. They also feel the different elements showing up gradually after some delays "sets a pace" for the story. This is thanks to transition effects and element movements that are part of the interaction. It puts users into a slow, relaxed state of mind as if they are watching a story unfold instead of being overloaded with too much information and actively pursue an outcome. 
+
+Some things can also be made better in this prototype. First, tweaking the visual design to include slightly more detail might help; for example, drawing the legs of the table instead of just having an oval, to show that it is a dining table that the letters are resting on. I aim to explore more visual assets online that I can use for this moving forward. Next, they suggested implementing interaction not only with the texts but also with objects, to introduce more elements of fun in the story. This can be interspersed with clickable text in order to create more novelty effect and avoid the users being bored when the story has gone on for some time. Regarding this, I also got a suggestion on indicating the text can be clicked, possibly by putting shapes to imply it is a button. Lastly, more hidden interactions need more hints. The peeking page of the second letter is not immediately perceivable for the users. This needs to be highlighted as it may hinder people from continuing and following the story.
+
 
 ## Updated Designs
 
-<<<<<<< HEAD
 ![Interaction hint - changing color on letter](images/new1.png)
 ![Interaction hint - changing color on envelope](images/new2.png)
 
@@ -155,60 +161,85 @@ The full completed prototype can be accessed here: https://www.figma.com/proto/j
 
 [Video Demo](images/letters.mp4)
 
-=======
-Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
->>>>>>> parent of 452c99a (fp2)
 
 ## Feedback Summary
 
-Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words). 
+Two major notes from the lab feedback session informed most of my design decisions in this project. The first one is being smart about story progressions to allow for replayability. After the player completes a path, it might be beneficial not just to give them an option to replay the game, but for some endings to lead toward a certain point in the story, where the players get to "restart" their story midway and make a different choice. I agree with this feedback because it is better than simply leading them to an "end". It may also enrich the story if they know some pathways might direct them to restart, and become more engaged with the site as a result.
+
+The second feedback is that this project should serve to strengthen my visual design skills. I decided I should explore ways to communicate a story, not only through text, but through imagery as well. During prototyping, I experimented by infusing various interaction points and letting the users try them out. Aside from that, I used learnings from design classes I took this semester to make sure the pages are readable and quickly understandable, for example, using visual principles such as hierarchy and grouping.
+
+Due to the nature of the text-based game project, the output would require higher quantities of assets, utilizing simpler interaction and the power of narrative rather than overly detailed visual elements in a few pages. Hence, my usability testing session aims to discover the main principles of what hooks users in mediums such as these. I wanted to capture what works and what doesn’t, in a site that only employs straightforward events such as clicks and hovers. Therefore, implementing the two feedbacks, I tested two loops that represented examples of these interactions. Moving forward, for the rest of the project, the findings would inform my decisions when designing the rest of the story.
 
 ## Milestones
 
-Outline weekly milestones to plan your expected implementation progress until the end of the semester (\~300 words). 
-
 ### *Implementation Plan*
 
-- [ ] Week 9 Oct 28 \- Nov 1:
+- [X] Week 9 Oct 28 \- Nov 1:
   - [X] FP1 due
-  - [ ] ...
+  - [X] Do first run of prototyping to gain initial feedback
+  - [X] Revise and finalize prototype using feedback from usability testing to lock visuals and interactivity
   
 - [ ] Week 10 Nov 4 \- Nov 8:   
-  - [ ] FP2 due
+  - [X] FP2 due
+  - [ ] Finish story draft: complete planned narration from start to end, predict how many screens/visual assets will be needed.
+  - [ ] Finish plan for interactivity: mark where all the story branch will be placed and what technical requirements are needed. For example, note what animations and graphics will happen at which point to illustrate certain parts of the plot.
+  - [ ] Start checking JS Library for implementation
+  - [ ] Start the main skeleton of the code in HTML, noting certain elements that need JS functionalities using my planned libraries.
 
 - [ ] Week 11 Nov 11 \- Nov 15:  
-- [ ] Week 12 Nov 18 \- Nov 22:   
-- [ ] Week 13 Nov 25 \- Nov 29:  
+  - [ ] FP3 due: complete one functionality. In my project, this will be completing one choice branch with minimal graphics/visual definition but full animation function.
+  - [ ] Start preparing assets: prepare graphics, icons, backgrounds, and all things that will relate to CSS needs for this project.
+  - [ ] Continue coding and implement CSS + JS with the HTML.
 
+- [ ] Week 12 Nov 18 \- Nov 22:  
+  - [ ] Finish coding all the chapters from start to finish according to the planned interactivities.
+  - [ ] Complete visual assets and load them in the main project code.
+  - [ ] Complete implementing functionalities from  JS library for dynamic text.
+
+- [ ] Week 13 Nov 25 \- Nov 29:  
   - [ ] Thanksgiving  
+  - [ ] Iteration: testing and refining to multiple users to assure understandability, usability, and enjoyment. Revise accordingly before due date of final project.
+
 - [ ] Week 14 Dec 2 \- Dec 6:  
-  - [ ] FP4 due 
+  - [ ] FP4 due: all functionalities, content, and aesthetics are done and finalized, ready to use.
+
 
 ### *Libraries and Other Components*
 
 List the JS libraries and other components (if applicable) that you plan to use. 
-* 
+* Use Figma plugins to access libraries for hand-drawn style visual assets (objects in the story, e.g letters, tables, other items)
+* Alternatively, use free image resources on the internet for backgrounds and other visuals to build the environment
+* Textillate.js for dynamic narration effects and animating choice options
+* Fabric.js for backgrounds and simple line art, layering the Textillate animations on top of the Fabric canvas
 
 
 ## Generative AI Use Plan
 
-Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).
-
 ### *Tool Use*
 
- What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
-
 * ChatGPT  
-  * I will use it for … because it can help me …  
-  * I will not use it for … because it might not be able to help me with …   
+  * I will use this to suggest my workflow for utilizing both Textillate and Fabric. It can help me by directing the step by steps since I have no prior experience or knowledge with JS libraries. I believe ChatGPT can help me work in an efficient way and ensure correct implementation of both tools in order to make my project work the way it is supposed to. It can also suggest what other tools I can use.
+  * I will also use it for troubleshooting and detecting errors in edge cases, because I believe it can predict mistakes that might happen if there are incomplete or ineffective code that I might miss.
+  * I will not use it for coding from scratch or suggest me complete codes to use. It might not use functions that I am familiar with, or require a higher level of knowledge than an individual at my level of understanding. If I do that, then I won't be able to explain the mechanics of my pwn project and consequently work on any errors without ChatGPT's help.  
 * GitHub Copilot  
-* ...
+  * I will use it as my AI coding assistant to write codes faster, more efficiently, and correctly. I believe it can be a good support that informs me of alternative solutions, coding best practices, and helps me explore new approaches that I may not have considered.
+  * However, same as my usage of ChatGPT above, I will not use it as a replacement for deepening my own understanding of coding concepts or for doing critical thinking myself. The strategy and high-level plan will still come from myself as the project owner.
+* DeviantArt DreamUp  
+  * I am considering this tool to generate simple assets to use as backgrounds if I am in need of something deeply specific but cannot find a free resource on the internet. I will be sure to credit accordingly.
+
 
 ### *Responsible Use*
 
-How would you use Generative AI responsibly? 
+There are three principles I will stick to. The first one is to credit and keep neat documentation of all AI tools that I used, as well as elaborating in what way they helped me. Second, I will not let it make the first and last draft of my work. This means that the first idea comes from myself, and I will input prompts accordingly for it to help refine and spark new ideas for me. It will not write or make the last version I use to submit, and I will be the last pair of eyes to check my work and finalize it for submission. Lastly, I will not use the AI result if I do not understand the rationale or why it suggested certain methods. I have to understand the reasoning behind it myself before implementing the solutions.
 
----
+
+### *Credits for Assets*
+
+- Hand drawn asset for letters using Figma plugin, Streamline Icons
+- Map asset taken from AndrewHilton from ImgBin (https://imgbin.com/png/Zgj7cQ6k/fantasy-map-sketch-png)
+- Textures for background using Design Garage's Figma library on https://www.figma.com/community/file/1414371007998118447
+
+
 
 # **FP1 \- Proposal for Critique**
 
