@@ -131,15 +131,15 @@ Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-gener
 
 ### *Prototype 1: Toss Loop*
 
-![If the players choose to Toss](images/proto1a.png)
-![Toss results](images/proto1b.png)
+![If the players choose to Toss](images/proto1a.jpeg)
+![Toss results](images/proto1b.jpeg)
 
 This flow shows the main option given to users when they first land inside the game if they choose not to pick up the letter and toss it away. It will lead to the same scene replaying with altered visual elements that imply users have no choice but to pick up the letter. Hence, it has bigger text, enlarged and reddened images of a letter, and slightly altered narration. From the testing session, this flow is straightforward and easily understandable by users. They succesfully perceived that they had no choice but to pick up the letter, and there was a buildup of urgency communicated by the image.
 
 ### *Prototype 2: Pickup Loop*
 
-![If the players choose to Pick Up letter](images/proto2a.png)
-![Upon clicking the second letter](images/proto2b.png)
+![If the players choose to Pick Up letter](images/proto2a.jpeg)
+![Upon clicking the second letter](images/proto2b.jpeg)
 
 This flow presents a branch of the main story, triggered when users decide to pick up the letters from the table. It further introduces and explains additional elements to the story that will accompany the players further down the line. In this section, I implemented simple click interactions, showing that users can click on the peeking page on the right side of the screen to reveal the second letter. However, one piece of feedback pointed out that it’s not immediately clear that this element can be interacted with, although the revealing mechanism adds a subtle touch that enhances the experience. Hence, I got a suggestion to include more visual elements that hint at this more clearly.
 
@@ -152,8 +152,8 @@ Some things can also be made better in this prototype. First, tweaking the visua
 
 ## Updated Designs
 
-![Interaction hint - changing color on letter](images/new1.png)
-![Interaction hint - changing color on envelope](images/new2.png)
+![Interaction hint - changing color on letter](images/new1.jpeg)
+![Interaction hint - changing color on envelope](images/new2.jpeg)
 
 In this updated prototype, there are two changes I implemented based on user feedback. The first is adding visual hints that the second letter can be interacted with. I did this by making the letter change color upon hovering, into blue, so the players are prompted to click the peeking page. This aims to reduce confusion and uncertainty. Second, I changed the interaction points where users can click. Instead of clicking on the words, I made the letters on the table clickable, enlarged upon hovering, and change colors. I also included a trashcan image in the first branch screen to visualize the choices better. This way, it enhances the novelty and fun aspects of the game. Lastly, on the start page, I also implemented a similar color changing transition upon hover to show the word can be interacted with. These interaction hints will be principles that I bring as a learning from testings into my project.
 
