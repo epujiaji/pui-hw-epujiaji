@@ -1,0 +1,169 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Crimson Text", serif;
+    background-image: url("images/bg.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+/* Typography */
+h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: 200;
+    line-height: 1.4;
+    font-size: 20px;
+    max-width: 80%;
+    margin: 10px auto;
+}
+
+
+/* Landing Container */
+.landing {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.landing img {
+    margin: 50px;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.story {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    max-width: 800px;
+    padding: 20px;
+    position: relative;
+}
+
+.story p {
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.letter {
+    display: flex;
+    color: rgb(65, 64, 64);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 40px;
+    flex-direction: column;
+    border-radius: 5px;
+    background-image: url("images/letter.png");
+}
+
+.letter p {
+    line-height: 100%;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.phone {
+    display: flex;
+    color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.phone p {
+    line-height: 100%;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#myvoice {
+    font-style: normal;
+    text-align: right;
+}
+
+/* CLICKIES */
+
+/* Initial hidden state */
+.letterIcon.hidden {
+    display: none;
+}
+
+/* Style for the zoom effect */
+.letterIcon {
+    transition: transform 0.6s ease; 
+}
+
+/* Zoom on hover */
+.letterIcon:hover {
+    transform: scale(1.2); 
+    cursor: pointer; 
+}
+
+
+.actions {
+    display: flex; 
+    justify-content: center; 
+    gap: 50px;
+    position: absolute; 
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.clickable {
+    color: white; 
+    font-size: 20px;
+    font-style: italic;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; 
+    position: relative; 
+    transition: color 0.3s ease; 
+}
+
+.clickable::after {
+    content: ""; 
+    text-decoration: none;
+    position: absolute; 
+    left: 50%;
+    bottom: 0; 
+    width: 0%; 
+    height: 1px;
+    background-color: #ffffff;
+    transition: width 0.3s ease, left 0.3s ease; 
+    transform: translateX(-50%);
+}
+
+.clickable:hover {
+    color: #dcc890; 
+}
+
+.clickable:hover::after {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
