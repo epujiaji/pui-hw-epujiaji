@@ -1,3 +1,19 @@
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        document.body.classList.add("fade-in");
+    }, 200);
+        const letter = document.querySelector(".letter");
+    
+        setTimeout(() => {
+            letter.style.opacity = 1; // Reveal the letter smoothly
+            letter.style.transform = "rotate(0deg) scale(1)"; // Reset rotation and size
+
+        }, 1000);
+    
+});
+
 $(document).ready(function () {
     $(".story p").css("animation-duration", "3s")
     $(".story p").addClass("animate__animated animate__slideInDown"); 
@@ -6,9 +22,9 @@ $(document).ready(function () {
         if ($(".clickable").hasClass("hidden")) {
             $(".clickable").removeClass("hidden").textillate({
                 in: {
-                    effect: "bounceInUp",
+                    effect: "rotateIn",
                     delay: 90,
-                    sync: false,
+                    sync: true,
                     sequence: true
                 },
                 autoStart: true
@@ -20,7 +36,7 @@ $(document).ready(function () {
         e.preventDefault();
         const destination = $(this).parent("a").attr("href");
 
-        $(".story, .clickable").addClass("animate__animated animate__slideOutDown");
+        $(".story, .clickable").addClass("animate__animated animate__slideOutUp");
 
         setTimeout(() => {
             $(".story, .clickable").addClass("hidden");

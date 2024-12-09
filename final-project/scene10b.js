@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Add the fade-in class to body after the page has loaded
     document.body.classList.add("fade-in");
 });
 
 $(document).ready(function () {
-  const prologueTexts = $(".prologue");
+  const prologueTexts = $(".this");
   let currentIndex = 0;
 
   function showNextPrologue() {
@@ -13,16 +12,14 @@ $(document).ready(function () {
             .removeClass("hidden")
             .textillate({
                 in: {
-                    effect: "fadeInUp",
-                    sync: true,
-                    //delay: 100
+                    effect: "fadeIn",
+                    sync: true
                 },
                 out: {
-                    effect: "fadeOutUp",
-                    sync: true,
-                    //delay: 100
+                    effect: "fadeOut",
+                    sync: true
                 },
-                minDisplayTime: 2000,
+                minDisplayTime: 1500,
                 initialDelay: 1000,
                 autoStart: true,
                 loop: false 
@@ -39,27 +36,13 @@ $(document).ready(function () {
     }
 }
 
-
   function showMainElements() {
-      $(".titleText").removeClass("hidden").textillate({ in: {
-        effect: "fadeIn",
-        delay: 100
-      }
-    });
-      $(".subText").removeClass("hidden").textillate({ in: {
-        effect: "fadeIn",
-        delay: 50
-      }
-    });
-    $(".letterIcon").removeClass("hidden").css("display", "block").addClass("animate__animated animate__fadeIn");
-    
     $(".clickable").removeClass("hidden").textillate({ in: {
         effect: "fadeIn",
         delay: 100
       }
     });
   }
-
   showNextPrologue();
 });
 
@@ -68,11 +51,11 @@ $(document).ready(function() {
   $(".clickable").click(function (e) {
       e.preventDefault();
 
-      $(".landing").addClass("animate__animated animate__fadeOut");
+      $(".story").addClass("animate__animated animate__fadeOut");
 
       setTimeout(() => {
-          $(".landing").addClass("hidden");
-          window.location.href = "./scene1.html";
+          $(".story").addClass("hidden");
+          window.location.href = "./scene10c.html";
       }, 1000);
   });
 });

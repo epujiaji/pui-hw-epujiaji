@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
         document.body.classList.add("fade-in");
-    }, 200);
+    }, 50);
 });
 
-
 $(document).ready(function () {
-    $(".story p").css("animation-duration", "2s")
-    $(".story p").addClass("animate__animated animate__fadeInDown"); 
+    $(".story p").css("animation-duration", "3s")
+    $(".story p").addClass("animate__animated animate__flash"); 
 
     $(".story p").on("animationend", function () {
         if ($(".clickable").hasClass("hidden")) {
             $(".clickable").removeClass("hidden").textillate({
                 in: {
-                    effect: "fadeInUp",
-                    delay: 900,
+                    effect: "fadeIn",
+                    delay: 1000,
                     sync: true,
+                    sequence: false
                 },
                 autoStart: true
             });
@@ -26,7 +26,7 @@ $(document).ready(function () {
         e.preventDefault();
         const destination = $(this).parent("a").attr("href");
 
-        $(".story, .clickable").css("animation-duration", "2s")
+        $(".story, .clickable").css("animation-duration", "3s")
         $(".story, .clickable").addClass("animate__animated animate__zoomOut");
 
         setTimeout(() => {
@@ -36,4 +36,3 @@ $(document).ready(function () {
     });
 
 });
-

@@ -1,21 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
         document.body.classList.add("fade-in");
-    }, 200);
+    }, 50);
 });
 
 
 $(document).ready(function () {
-    $(".story p").css("animation-duration", "2s")
-    $(".story p").addClass("animate__animated animate__fadeInDown"); 
+    $(".story p").css("animation-duration", "5s")
+    $(".story p").addClass("animate__animated animate__fadeIn"); 
 
     $(".story p").on("animationend", function () {
         if ($(".clickable").hasClass("hidden")) {
             $(".clickable").removeClass("hidden").textillate({
                 in: {
-                    effect: "fadeInUp",
-                    delay: 900,
-                    sync: true,
+                    effect: "fadeIn",
+                    delay: 90,
+                    sync: false,
+                    sequence: true
                 },
                 autoStart: true
             });
@@ -26,8 +27,8 @@ $(document).ready(function () {
         e.preventDefault();
         const destination = $(this).parent("a").attr("href");
 
-        $(".story, .clickable").css("animation-duration", "2s")
-        $(".story, .clickable").addClass("animate__animated animate__zoomOut");
+        $(".story p").css("animation-duration", "5s")
+        $(".story, .clickable").addClass("animate__animated animate__fadeOut");
 
         setTimeout(() => {
             $(".story, .clickable").addClass("hidden");

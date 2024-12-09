@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        document.body.classList.add("fade-in");
+    }, 200);
+});
+
 $(document).ready(function () {
     $(".story p").css("animation-duration", "3.5s")
     $(".story p").addClass("animate__animated animate__headShake"); 

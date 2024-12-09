@@ -1,5 +1,6 @@
 /* General Styles */
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -7,11 +8,65 @@ html, body {
     align-items: center;
     justify-content: center;
     font-family: "Crimson Text", serif;
-    background-image: url("images/bg.jpeg");
+    background-image: url("images/black.png");
     background-size: cover;
     background-position: center;
+
 }
 
+/* Body Background */
+
+body#livingroom.fade-in,
+body#readletter.fade-in,
+body#call.fade-in,
+body#memo.fade-in,
+body#meadow.fade-in,
+body#bedroom.fade-in,
+body#woods.fade-in {
+    opacity: 1
+}
+
+body#livingroom {
+    background-image: url("images/livingroom.png");
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body#readletter {
+    background-image: url("images/readletter1.png");
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body#call {
+    background-image: url("images/call1.png");
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body#memo {
+    background-image: url("images/seepicture.png");
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body#meadow {
+    background-image: url("images/meadow1.png");
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body#bedroom {
+    background-image: url("images/bedroom1.png");
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body#woods {
+    background-image: url("images/woods1.png");
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
 
 .hidden {
     display: none;
@@ -47,7 +102,7 @@ h3 {
 
 .landing img {
     margin: 50px;
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -55,7 +110,7 @@ h3 {
     color: white;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     max-width: 800px;
     padding: 20px;
     position: relative;
@@ -64,6 +119,17 @@ h3 {
 .story p {
     font-size: 18px;
     line-height: 120%;
+}
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0; /* Start hidden */
+        transform: rotate(-90deg) scale(0.8); /* Rotate and shrink slightly */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: rotate(0deg) scale(1); /* End at default position */
+    }
 }
 
 .letter {
@@ -77,6 +143,9 @@ h3 {
     flex-direction: column;
     border-radius: 5px;
     background-image: url("images/letter.png");
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.8); /* Start in rotated position */
+    transition: transform 2s ease, opacity 2s ease; /* Smooth transition */
 }
 
 .letter p {
@@ -114,56 +183,67 @@ h3 {
 
 /* Style for the zoom effect */
 .letterIcon {
-    transition: transform 0.6s ease; 
+    transition: transform 0.6s ease;
 }
 
 /* Zoom on hover */
 .letterIcon:hover {
-    transform: scale(1.2); 
-    cursor: pointer; 
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 
 .actions {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     gap: 50px;
-    position: absolute; 
+    position: absolute;
     margin-top: 30px;
     width: 100%;
     position: relative;
 }
 
 .clickable {
-    color: white; 
-    font-size: 20px;
+    color: white;
+    font-size: 25px;
     font-style: italic;
+    text-align: center;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none; 
-    position: relative; 
-    transition: color 0.3s ease; 
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+    transition: transform 0.6s ease;
+
 }
 
 .clickable::after {
-    content: ""; 
+    content: "";
     text-decoration: none;
-    position: absolute; 
+    position: absolute;
     left: 50%;
-    bottom: 0; 
-    width: 0%; 
+    bottom: 0;
+    width: 0%;
     height: 1px;
     background-color: #ffffff;
-    transition: width 0.3s ease, left 0.3s ease; 
+    transition: width 0.3s ease, left 0.3s ease;
     transform: translateX(-50%);
 }
 
 .clickable:hover {
-    color: #dcc890; 
-}
+    color: #dcc890;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
 
 .clickable:hover::after {
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+#clickiesecond {
+    font-size: 20px;
+    margin-top: 10px;
 }
