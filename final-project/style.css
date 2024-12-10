@@ -28,42 +28,49 @@ body#woods.fade-in {
 }
 
 body#livingroom {
+    background-color: #000000;
     background-image: url("images/livingroom1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#readletter {
+    background-color: #000000;
     background-image: url("images/readletter1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#call {
+    background-color: #000000;
     background-image: url("images/call1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#memo {
+    background-color: #000000;
     background-image: url("images/seepicture.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#meadow {
+    background-color: #000000;
     background-image: url("images/meadow1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#bedroom {
+    background-color: #000000;
     background-image: url("images/bedroom1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#woods {
+    background-color: #000000;
     background-image: url("images/woods1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
