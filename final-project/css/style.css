@@ -12,12 +12,7 @@ body {
     background-image: url("../images/black.png");
     background-size: cover;
     background-position: center;
-}
-
-#audio {
-    display: none;
-  }
-    
+}  
 
 /* Body Background */
 
@@ -154,7 +149,7 @@ h3 {
     padding: 40px;
     flex-direction: column;
     border-radius: 5px;
-    background-color: #000000;
+    background-color: #ffffff;
     background-image: url("../images/letter.png");
     opacity: 0;
     transform: rotate(-90deg) scale(0.8); /* Start in rotated position */
