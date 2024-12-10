@@ -117,7 +117,7 @@ h3 {
 }
 
 .story p {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 120%;
 }
 
@@ -167,6 +167,18 @@ h3 {
     line-height: 100%;
     font-size: 15px;
     font-style: italic;
+}
+
+#credits {
+    display: flex;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 5px;
+    font-style: italic;
+    flex-direction: column;
 }
 
 #myvoice {
