@@ -1,7 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
         document.body.classList.add("fade-in");
-    }, 50);
+    }, 200);
+        const letter = document.querySelector(".letter");
+    
+        setTimeout(() => {
+            letter.style.opacity = 1; // Reveal the letter smoothly
+            letter.style.transform = "rotate(0deg) scale(1)"; // Reset rotation and size
+
+        }, 1000);
+    
 });
 
 
