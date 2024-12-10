@@ -27,7 +27,7 @@ body#woods.fade-in {
 }
 
 body#livingroom {
-    background-image: url("images/livingroom.png");
+    background-image: url("images/livingroom1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -117,7 +117,7 @@ h3 {
 }
 
 .story p {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 120%;
 }
 
