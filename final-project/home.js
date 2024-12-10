@@ -72,7 +72,7 @@ $(document).ready(function() {
 
       setTimeout(() => {
           $(".landing").addClass("hidden");
-          window.location.href = "./scene1.html";
+          window.location.href = "./scene1/scene1.html";
       }, 1000);
   });
 });

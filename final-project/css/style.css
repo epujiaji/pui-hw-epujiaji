@@ -9,7 +9,7 @@ body {
     justify-content: center;
     font-family: "Crimson Text", serif;
     background-color: #000000;
-    background-image: url("images/black.png");
+    background-image: url("../images/black.png");
     background-size: cover;
     background-position: center;
 
@@ -29,49 +29,49 @@ body#woods.fade-in {
 
 body#livingroom {
     background-color: #000000;
-    background-image: url("images/livingroom1.png");
+    background-image: url("../images/livingroom1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#readletter {
     background-color: #000000;
-    background-image: url("images/readletter1.png");
+    background-image: url("../images/readletter1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#call {
     background-color: #000000;
-    background-image: url("images/call1.png");
+    background-image: url("../images/call1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#memo {
     background-color: #000000;
-    background-image: url("images/seepicture.png");
+    background-image: url("../images/seepicture.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#meadow {
     background-color: #000000;
-    background-image: url("images/meadow1.png");
+    background-image: url("../images/meadow1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#bedroom {
     background-color: #000000;
-    background-image: url("images/bedroom1.png");
+    background-image: url("../images/bedroom1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 body#woods {
     background-color: #000000;
-    background-image: url("images/woods1.png");
+    background-image: url("../images/woods1.png");
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -150,7 +150,8 @@ h3 {
     padding: 40px;
     flex-direction: column;
     border-radius: 5px;
-    background-image: url("images/letter.png");
+    background-color: #000000;
+    background-image: url("../images/letter.png");
     opacity: 0;
     transform: rotate(-90deg) scale(0.8); /* Start in rotated position */
     transition: transform 2s ease, opacity 2s ease; /* Smooth transition */
