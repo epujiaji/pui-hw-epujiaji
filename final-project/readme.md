@@ -13,35 +13,52 @@ Feel free to refer to this [Markdown Cheat Sheet](https://www.markdownguide.org/
 
 Describe your website (300 words).
 
-* What is the purpose of your website?   
-* Who is the target audience?  
-* What information do you convey with your website?   
-* How is it interesting and engaging? 
+* My website, Letters for the Road, is an interactive choice-based text story. It is an experience where players navigate through the site and witness different narrative outcomes based on the choices they make. Immersion towards the story is strengthened through imagery and text animations, encouraging players to become engrossed with outcomes and how the story will end by the choices they make.
+* The game is accessible to everyone, with no specific target demographic. It is especially suited for those who enjoy short stories and are looking for a brief escape from their busy lives. While it shares some similarities with graphic or visual novels, the game is designed to be approachable for all, regardless of prior gaming experience.
+* The narrative includes several mini-branches that allow players to explore "detours" before looping back to the main storyline. Even if players need to restart from certain points, the story remains fully fictional and aims to entertain and amuse.
+* The site integrates multiple interactions alongside an engaging narrative. Players make choices to move the story forward, supported by visual elements like background images that bring the setting to life. Additionally, "letters" appear as dynamic, interactive objects, creating the feeling of picking up and reading a real letter within the story.
+
 
 ## Part 2: User Interaction
 
 How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+1. Click on "Start Treading" on Index page.
+2. Click on "Pick it up" or "Throw it away" on scene 1.
+3. If choose "Throw it away", click "Pick it up" on scene 2.
+4. If choose "Pick it up", click one of three options in scene 3:  "Call their mother", "Remind yourself what happened", or "Go to the woods".
+5. If choose "Call their mother", clicking on "Wait" or "But" will direct player to scene 4a. No different outcomes.
+6. After clicking "Wait" or "But", click "Try Again" in scene 4a to get redirected back to scene 3.
+7. If choose "Remind yourself what happened", players can choose "Call their mother" or "Go to the woods", as well as 3 pages about more information: "Remember what they were like", "Recall what you did together", and "Reflect on how it happened"
+8. Players can click "What else is there" to return to scene 5.
+9. If choose "Go to the woods", Players can choose "Wait here in the fields" or "Go to the place you last met".
+10. If choose "Wait here in the fields", players click "Sleep", then "Listen closely",  then "Wake Up". After that, they click "Try again".
+11. If choose "Go to the place you last met", players click "Look down", "Look closely", "Pick it up", then "end" to finish game.
+12. Upon the credits scene, players can click "Restart" to replay the game.
+
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+1. Textillate  
+   * Chosen for its simple implementation and extensive customization options, including control over display time, delay, autostart, looping, and synchronized or sequential text display.
+   * Used to create text entrances and exits on each page, especially for interactive elements like clickable options.
+   * Enhances emotional immersion in the story by contributing to the atmosphere. For instance, blinking or fading text reinforces the narrative's mellow tone and adds to the overall mood.
+2. Animate
+   * Similarly chosen for its simplicity and flexibility, with the added benefit of offering animations not available in Textillate, such as flash or shake effects. 
+   * Utilized to implement text entrances and exits on each page through the addClass function in JavaScript for CSS styling.
+   * Like Textillate, it elevates the atmosphere and mood of the story by adding stylish, mood-setting animations.
 
 ## Part 4: Design Iteration
 
-Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
+The initial design for Letters for the Road was much simpler than its current form. Most of the changes focus on visual enhancements to bring out the themes and add style, making it a more immersive experience that strengthen emotional engagement toward the story. For example, I diversified text animations across pages to match the story—for instance, using "blinking" text to simulate eyes opening when waking up. I also introduced transitional pages where text fades in and out to create the feel of passing dialogue and a slower pace, encouraging users to engage rather than just click through. These transitions are featured in the prologue and ending scenes. Additionally, I added unique background images for each scene and implemented a rotating entrance for the letter container to mimic the action of picking up a letter.
+
 
 ## Part 5: Implementation Challenge
 
-What challenges did you experience in implementing your website? (2-4 sentences max)
+I initially had some hurdles implementing the various Textillate and Animate animations for each page, since each page is different. I also struggled with customizing the text entrances in detail, as I wanted to time certain texts to show up after others (for example, clickable options appearing after narration, or the letter showing up after narration). Timing the animations turned out to be the trickiest part. I also decided to use Animate after discovering that the Textillate library wasn’t exhaustive enough to achieve the effect I wanted.
+
 
 ## Part 6: Generative AI Use and Reflection
 
@@ -57,51 +74,177 @@ For the following aspects of your project, edit the corresponding table cell to 
 - *Usage*: Whether you used / did not use this tool for the aspect. Enter [Yes/No]
 - *Productivity*: Give a rating on whether this tool makes your productivity for X aspect [1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved].
 
-| Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
+| Tool Name | Ratings | design | plan | write code | debug | - |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
-| Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| ChatGPT | Usage | No | Yes | Yes | Yes | - |
+| ChatGPT | Productivity | 4 | 7 | 5 | 6 | 4 |
+| Gemini| Usage | Yes | No | No | No | - |
+| Gemini | Productivity | 7 | 4 | 4 | 4 | 4 |
 
 
 ### Usage Reflection
 
 > Impact on your design and plan 
-* It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
-  2. Tool2:
+* It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that it helps 1. Suggest an optimum workflow for utilizing both Textillate and Animate, 2. Debugging troubles in my code, and 3. Clarifying whether the changes I want to make is feasible with my current code. For example, 
+  1. ChatGPT: I had trouble initializing both libraries and implementing them, as I didn’t find the documentation for either particularly helpful, especially for beginners. ChatGPT helped me understand what to do and made sure the libraries were accessible. When I encountered errors, I shared snippets of my problematic code to troubleshoot, as I often have difficulty pinpointing where things go wrong. I also asked ChatGPT whether it was possible to make specific changes, such as customizing the entrance timing for different text elements on one page that would show up again on another page with the same class identifier. Sometimes, it's tough to find exact use case examples online, which is where I find ChatGPT especially useful. I can describe my situation and get faster troubleshooting results. It also suggests best practices and helps me avoid mistakes, like when overlapping functions might block certain functionality.
+* It also matched my expectations and plan to help create assets to use as backgrounds when I need something deeply specific but cannot find a free resource on the internet. For example, 
+  1. Gemini: I am able to give it very specific atmospheres and mood I was going for, and even when it does not fulfill my expectations, I can give a reference image and point out which aspect I want it to replicate; such as the color palette, image style, and angle. This greatly helps me in making assets that does not only fit the setting, but also layouted in a way that does not block the text placement in the screen.
+
+* It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that as I ended up comparing the code it generated to the code I had written on my own. For example, 
+  1. ChatGPT: ChatGPT didn’t effectively suggest revisions and often made style decisions that altered the structure I had already implemented. Instead of being helpful, it made my code more complex. I found that comparison was a more useful approach for me to get the answers I needed. I let ChatGPT show what it would do on its own, then I adjusted my own code accordingly, sticking to the structure I had. This method proved to be much more effective in solving problems.
+* GenAI tool partly influenced my final design and implementation plan, as I used it to refine my plans and make them more effective. However, I also stuck closely to my original vision and didn’t let its limitations block me. For example, 
+  1. ChatGPT: It helped me improve the effectiveness of my code. For example, it suggested ways to structure my `head` tag to ensure all scripts for the library were referenced correctly. While this was a technical adjustment, the original design remains entirely my own.
+  2. Gemini: It’s just used as a supporting tool to enhance the visuals and style. I had a clear vision in mind for what I wanted the background to look like, and even when the results didn’t quite meet my expectations, I reprompted multiple times to get as close as possible to the outcome I envisioned.
 
 > Use patterns
-* I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
-* I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
+* I accepted the suggestions when they made sense and didn’t disrupt my existing code structure.  For example, 
+  1. ChatGPT: This tool once suggested adding a function to create a page background fade-in effect to my JS file. I adjusted my design based on the suggestion because it found an ideal placement for the function that didn’t interfere with my other existing functions. On other cases, I wanted text elements to show up one after another, and it proposed using a setTimeout function for each text ID. This approach was logical and worked perfectly, so I followed it.
+* I critiqued/evaluated the generated suggestions by reprompting or adding constraints, ensuring they fit my existing setup. For example, 
+  1. ChatGPT: It once suggested adding extra containers to adjust how a flexbox looked. However, I rejected the idea because it introduced unnecessary margins and padding, making the site look off-center and inconsistent with my original layout.
+  2. Gemini: It generated a background based on my literal prompt, but the style was inconsistent with the rest of the visuals. I provided a reference image, which helped it create something more aligned.
 
 
 > Pros and cons of using GenAI tools
 * Pros
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: Great for troubleshooting specific use cases, checking code, and making adjustments rather than rewriting everything from scratch. It’s granular and remembers previous class/ID names for continuity.
+  2. Gemini: Produces refined and detailed image styles, especially when given precise prompts or reference images.
 * Cons
-  1. Tool1: 
-  2. Tool2:
-
+  1. ChatGPT: Often changes code without considering the context, lacks awareness of repositories, and provides overly lengthy responses that require effort to scan for quick answers.
+  2. Gemini: Requires strict and detailed prompts to create the desired image, as vague instructions may lead to inconsistent results.
+ 
 
 ### Usage Log
 
-Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
+Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best!
 
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
-2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
+* [ChatGPT] (https://chatgpt.com/share/6758d77f-8ec8-8003-a59e-cd7ff3ac627a)
+* [Gemini] (https://docs.google.com/document/d/1YXNx1U__oKKPB6r_zk5HqiXtXw5Gj-hkhaS85-CGsno/edit?usp=sharing)
+
+### Appendix
+
+I use multiple pages for my file and the structure does not differ much, hence the WAVE accessibility results may look very similar. I included every page results below.
+
+#### Index
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/index.png) | ![Alt text](wave/index%20b.png) |
+
+#### Scene 1
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene1%20.png) | ![Alt text](wave/scene1%20b.png) |
+
+#### Scene 2
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene2.png) | ![Alt text](wave/scene2%20b.png) |
+
+#### Scene 3
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene3.png) | ![Alt text](wave/scene3%20b.png) |
+
+#### Scene 4
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene4.png) | ![Alt text](wave/scene4%20b.png) |
+
+#### Scene 4a
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene4a.png) | ![Alt text](wave/scene4a%20b.png) |
+
+#### Scene 5
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene5.png) | ![Alt text](wave/scene5%20b.png) |
+
+#### Scene 6
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene6.png) | ![Alt text](wave/scene6%20b.png) |
+
+#### Scene 7
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene7.png) | ![Alt text](wave/scene7%20b.png) |
+
+#### Scene 8
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene8.png) | ![Alt text](wave/scene8%20b.png) |
+
+#### Scene 9
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene9.png) | ![Alt text](wave/scene9%20b.png) |
+
+#### Scene 10
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene10.png) | ![Alt text](wave/scene10%20b.png) |
+
+#### Scene 10a
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene10a.png) | ![Alt text](wave/scene10a%20b.png) |
+
+#### Scene 10b
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene10b%20.png) | ![Alt text](wave/scene10b%20b.png) |
+
+#### Scene 10c
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene10c.png) | ![Alt text](wave/scene10c%20b.png) |
+
+#### Scene 11
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene11.png) | ![Alt text](wave/scene11%20b.png) |
+
+#### Scene 11a
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene11a%20.png) | ![Alt text](wave/scene11a%20b.png) |
+
+#### Scene 11b
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/scene11b.png) | ![Alt text](wave/scene11b%20b.png) |
+
+#### Scene 11c
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/) | ![Alt text](wave/scene11c%20b.png) |
+
+#### Scene Credits
+
+| Summary      |  Details       |
+|---------------|---------------|
+| ![Alt text](wave/) | ![Alt text](wave/credits%20b.png) |
+
+
 
 ---
 
@@ -220,7 +363,7 @@ List the JS libraries and other components (if applicable) that you plan to use.
 * ChatGPT  
   * I will use this to suggest my workflow for utilizing both Textillate and Fabric. It can help me by directing the step by steps since I have no prior experience or knowledge with JS libraries. I believe ChatGPT can help me work in an efficient way and ensure correct implementation of both tools in order to make my project work the way it is supposed to. It can also suggest what other tools I can use.
   * I will also use it for troubleshooting and detecting errors in edge cases, because I believe it can predict mistakes that might happen if there are incomplete or ineffective code that I might miss.
-  * I will not use it for coding from scratch or suggest me complete codes to use. It might not use functions that I am familiar with, or require a higher level of knowledge than an individual at my level of understanding. If I do that, then I won't be able to explain the mechanics of my pwn project and consequently work on any errors without ChatGPT's help.  
+  * I will not use it for coding from scratch or suggest me complete codes to use. It might not use functions that I am familiar with, or require a higher level of knowledge than an individual at my level of understanding. If I do that, then I won't be able to explain the mechanics of my own project and consequently work on any errors without ChatGPT's help.  
 * GitHub Copilot  
   * I will use it as my AI coding assistant to write codes faster, more efficiently, and correctly. I believe it can be a good support that informs me of alternative solutions, coding best practices, and helps me explore new approaches that I may not have considered.
   * However, same as my usage of ChatGPT above, I will not use it as a replacement for deepening my own understanding of coding concepts or for doing critical thinking myself. The strategy and high-level plan will still come from myself as the project owner.

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Add the fade-in class to body after the page has loaded
     document.body.classList.add("fade-in");
 });
 
@@ -15,12 +14,10 @@ $(document).ready(function () {
                 in: {
                     effect: "fadeInUp",
                     sync: true,
-                    //delay: 100
                 },
                 out: {
                     effect: "fadeOutUp",
                     sync: true,
-                    //delay: 100
                 },
                 minDisplayTime: 2000,
                 initialDelay: 1000,

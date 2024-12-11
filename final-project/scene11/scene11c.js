@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const letter = document.querySelector(".letter");
 
     setTimeout(() => {
-        letter.style.opacity = 1; // Reveal the letter smoothly
-        letter.style.transform = "rotate(0deg) scale(1)"; // Reset rotation and size
+        letter.style.opacity = 1;
+        letter.style.transform = "rotate(0deg) scale(1)";
 
     }, 1000);
 

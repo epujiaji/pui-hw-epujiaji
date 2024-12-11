@@ -25,7 +25,6 @@ $(document).ready(function () {
 
     $(".second").on("animationend", function () {
         if ($(".clickable").hasClass("hidden")) {
-            // Add a delay before showing .clickable
             setTimeout(() => {
                 $(".clickable").css("animation-duration", "4s");
                 $(".clickable").removeClass("hidden").textillate({
@@ -37,7 +36,7 @@ $(document).ready(function () {
                     },
                     autoStart: true
                 });
-            }, 2000); // 2000ms (2 seconds) delay
+            }, 2000);
         }
     });
     

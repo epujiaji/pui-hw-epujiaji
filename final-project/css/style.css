@@ -12,10 +12,9 @@ body {
     background-image: url("../images/black.png");
     background-size: cover;
     background-position: center;
-}  
+}
 
 /* Body Background */
-
 body#livingroom.fade-in,
 body#readletter.fade-in,
 body#call.fade-in,
@@ -130,12 +129,13 @@ h3 {
 
 @keyframes rotateIn {
     0% {
-        opacity: 0; /* Start hidden */
-        transform: rotate(-90deg) scale(0.8); /* Rotate and shrink slightly */
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.8);
     }
+
     100% {
-        opacity: 1; /* Fully visible */
-        transform: rotate(0deg) scale(1); /* End at default position */
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
     }
 }
 
@@ -152,8 +152,8 @@ h3 {
     background-color: #ffffff;
     background-image: url("../images/letter.png");
     opacity: 0;
-    transform: rotate(-90deg) scale(0.8); /* Start in rotated position */
-    transition: transform 2s ease, opacity 2s ease; /* Smooth transition */
+    transform: rotate(-90deg) scale(0.8);
+    transition: transform 2s ease, opacity 2s ease;
 }
 
 .letter p {
@@ -195,23 +195,18 @@ h3 {
 }
 
 /* CLICKIES */
-
-/* Initial hidden state */
 .letterIcon.hidden {
     display: none;
 }
 
-/* Style for the zoom effect */
 .letterIcon {
     transition: transform 0.6s ease;
 }
 
-/* Zoom on hover */
 .letterIcon:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
-
 
 .actions {
     display: flex;
@@ -234,7 +229,6 @@ h3 {
     position: relative;
     transition: color 0.3s ease;
     transition: transform 0.6s ease;
-
 }
 
 .clickable::after {
@@ -252,9 +246,9 @@ h3 {
 
 .clickable:hover {
     color: #dcc890;
-        transform: scale(1.2);
-        cursor: pointer;
-    }
+    transform: scale(1.2);
+    cursor: pointer;
+}
 
 
 .clickable:hover::after {
