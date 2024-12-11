@@ -17,6 +17,7 @@ Describe your website (300 words).
 * The game is accessible to everyone, with no specific target demographic. It is especially suited for those who enjoy short stories and are looking for a brief escape from their busy lives. While it shares some similarities with graphic or visual novels, the game is designed to be approachable for all, regardless of prior gaming experience.
 * The narrative includes several mini-branches that allow players to explore "detours" before looping back to the main storyline. Even if players need to restart from certain points, the story remains fully fictional and aims to entertain and amuse.
 * The site integrates multiple interactions alongside an engaging narrative. Players make choices to move the story forward, supported by visual elements like background images that bring the setting to life. Additionally, "letters" appear as dynamic, interactive objects, creating the feeling of picking up and reading a real letter within the story.
+* This website can be tested with 1440x900 screen size.
 
 
 ## Part 2: User Interaction
