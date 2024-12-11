@@ -236,13 +236,13 @@ I use multiple pages for my file and the structure does not differ much, hence t
 
 | Summary      |  Details       |
 |---------------|---------------|
-| ![Alt text](wave/) | ![Alt text](wave/scene11c%20b.png) |
+| ![Alt text](wave/scene11c.png) | ![Alt text](wave/scene11c%20b.png) |
 
 #### Scene Credits
 
 | Summary      |  Details       |
 |---------------|---------------|
-| ![Alt text](wave/) | ![Alt text](wave/credits%20b.png) |
+| ![Alt text](wave/credits.png) | ![Alt text](wave/credits%20b.png) |
 
 
 
